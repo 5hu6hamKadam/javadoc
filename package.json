@@ -3,6 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
+    "update-routes": "update_routes.bat",
+    "prestart": "npm run update-routes",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
@@ -10,7 +12,7 @@
     "dev:ssr": "ng run javadoc:serve-ssr",
     "serve:ssr": "node dist/javadoc/server/main.js",
     "build:ssr": "ng build && ng run javadoc:server",
-    "prerender": "ng run javadoc:prerender"
+    "prerender": "ng run javadoc:prerender --routes-file routes.txt"
   },
   "private": true,
   "dependencies": {
