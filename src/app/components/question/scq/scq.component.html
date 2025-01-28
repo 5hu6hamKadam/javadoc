@@ -1,0 +1,24 @@
+<p class="font-semibold mb-2">
+  <span class="mr-2">{{ question.questionNo }}.</span>{{ question.text }}
+</p>
+<div class="pl-2" *ngFor="let option of question.options">
+  <input type="radio" [value]="option" name="scq" /> {{ option }}
+</div>
+<div class="flex space-x-4 mt-2">
+  <app-button
+    [type]="buttonType.Default"
+    (click)="toggleAnswerVisibility()"
+    label="Submit"
+  ></app-button>
+  <app-button
+    [type]="buttonType.Success"
+    (click)="toggleAnswerVisibility()"
+    [label]="isAnswerVisible ? 'Hide Answer' : 'Show Answer'"
+  ></app-button>
+</div>
+<div
+  [@expandCollapse]="isAnswerVisible ? 'expanded' : 'collapsed'"
+  class="overflow-hidden border rounded p-3 mt-2 prose"
+>
+  <markdown lineNumbers clipboard mermaid [data]="question.answer"></markdown>
+</div>

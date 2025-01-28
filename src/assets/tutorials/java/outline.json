@@ -1,0 +1,49 @@
+[
+  {
+    "id": "1",
+    "label": "Introduction",
+    "children": [
+      {
+        "id": "1.1",
+        "label": "Introduction to Java",
+        "url": "/tutorials/java/introduction"
+      },
+      {
+        "id": "1.2",
+        "label": "Java Exceptions",
+        "url": "/tutorials/java/java-exceptions"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "label": "Advanced Java",
+    "children": [
+      {
+        "id": "3.1",
+        "label": "Java Lambda Expressions",
+        "url": "/tutorials/java/java-lambda-expressions"
+      },
+      {
+        "id": "3.2",
+        "label": "Method Reference",
+        "url": "/tutorials/java/method-reference"
+      },
+      {
+        "id": "3.3",
+        "label": "Java Streams",
+        "url": "/tutorials/java/java-streams"
+      },
+      {
+        "id": "3.4",
+        "label": "Multithreading and Concurrency",
+        "url": "/tutorials/java/multithreading-and-concurrency"
+      },
+      {
+        "id": "3.5",
+        "label": "Java I/O Streams",
+        "url": "/tutorials/java/java-io-streams"
+      }
+    ]
+  }
+]

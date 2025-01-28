@@ -1,0 +1,64 @@
+<ng-container *ngIf="categories$ | async as categories">
+  <div
+    *ngIf="!isInline"
+    class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 p-4"
+  >
+    <div
+      *ngFor="let category of categories"
+      class="flex flex-col items-center bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition"
+    >
+      <a
+        [routerLink]="category.url"
+        class="flex flex-col items-center text-center"
+      >
+        <img
+          [src]="category.icon"
+          alt="{{ category.label }}"
+          class="w-12 h-12 mb-2"
+        />
+        <span class="text-lg font-semibold text-gray-800">{{
+          category.label
+        }}</span>
+      </a>
+    </div>
+  </div>
+
+  <div *ngIf="isInline" class="relative flex items-center">
+    <!-- Left Scroll Button -->
+    <button
+      *ngIf="isInline"
+      class="absolute left-0 z-10 bg-gray-700 text-white py-1 px-2 focus:outline-none hover:bg-gray-800"
+      (click)="scrollLeft()"
+    >
+      &lt;
+    </button>
+
+    <!-- Scrollable Content -->
+    <div
+      #scrollContainer
+      class="flex overflow-hidden whitespace-nowrap w-full px-6"
+    >
+      <div
+        class="py-1 px-3 text-white cursor-pointer"
+        *ngFor="let category of categories"
+        [ngClass]="[
+          (activeCategory$ | async)?.url === category.url
+            ? 'bg-blue-500'
+            : 'bg-gray-700 hover:bg-black'
+        ]"
+        [routerLink]="category.url"
+      >
+        {{ category.label | uppercase }}
+      </div>
+    </div>
+
+    <!-- Right Scroll Button -->
+    <button
+      *ngIf="isInline"
+      class="absolute right-0 z-10 bg-gray-700 text-white py-1 px-2 focus:outline-none hover:bg-gray-800"
+      (click)="scrollRight()"
+    >
+      &gt;
+    </button>
+  </div>
+</ng-container>

@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-
+export const APP_NAME = "javadoc";
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'javadoc';
+  title = APP_NAME;
 }

@@ -20,19 +20,25 @@
             "outputPath": "dist/javadoc/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
-            "polyfills": [
-              "zone.js"
-            ],
+            "polyfills": ["zone.js"],
             "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/prismjs/themes/prism-okaidia.css",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/prismjs/prism.js",
+              "node_modules/emoji-toolkit/lib/js/joypixels.min.js",
+              "node_modules/prismjs/components/prism-java.min.js",
+              "node_modules/prismjs/components/prism-css.min.js",
+              "node_modules/prismjs/plugins/line-numbers/prism-line-numbers.js",
+              "node_modules/clipboard/dist/clipboard.min.js",
+              "node_modules/mermaid/dist/mermaid.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -40,7 +46,7 @@
                 {
                   "type": "initial",
                   "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -82,19 +88,11 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "polyfills": [
-              "zone.js",
-              "zone.js/testing"
-            ],
+            "polyfills": ["zone.js", "zone.js/testing"],
             "tsConfig": "tsconfig.spec.json",
             "inlineStyleLanguage": "scss",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.scss"
-            ],
+            "assets": ["src/favicon.ico", "src/assets"],
+            "styles": ["src/styles.scss"],
             "scripts": []
           }
         },
@@ -137,9 +135,7 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "routes": [
-              "/"
-            ]
+            "routes": ["/"]
           },
           "configurations": {
             "production": {

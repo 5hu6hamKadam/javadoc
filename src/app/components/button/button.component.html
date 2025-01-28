@@ -1,0 +1,12 @@
+<button
+  class="px-4 py-2 text-white font-semibold rounded-lg shadow-md active:shadow-inner focus:outline-none focus:ring-2 focus:ring-opacity-75"
+  [ngClass]="{
+    'bg-blue-500 hover:bg-blue-600 active:bg-blue-700 focus:ring-blue-300 ':
+      type === buttonType.Default,
+    'bg-green-500 hover:bg-green-600 active:bg-green-700 focus:ring-green-300 ':
+      type === buttonType.Success
+  }"
+  (click)="click.emit()"
+>
+  {{ label }}
+</button>

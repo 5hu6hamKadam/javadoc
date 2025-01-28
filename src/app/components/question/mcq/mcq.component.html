@@ -1,0 +1,44 @@
+<div class="p-4 bg-gray-100 rounded-lg shadow-md max-w-lg mx-auto">
+  <!-- Question -->
+  <p class="font-semibold text-lg">
+    <span class="mr-2">{{ question.questionNo }}.</span>{{ question.text }}
+  </p>
+
+  <!-- Options -->
+  <div
+    class="pl-4 space-y-2"
+    *ngFor="let option of question.options; let i = index"
+  >
+    <label class="flex items-center space-x-2 cursor-pointer">
+      <input
+        type="checkbox"
+        [value]="option"
+        class="w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+      />
+      <span class="text-gray-700">{{ option }}</span>
+    </label>
+  </div>
+
+  <!-- Actions -->
+  <div class="flex space-x-4 mt-4">
+    <button
+      class="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 focus:ring-opacity-75"
+      (click)="toggleAnswerVisibility()"
+    >
+      Submit
+    </button>
+    <button
+      class="px-4 py-2 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-300 focus:ring-opacity-75"
+      (click)="toggleAnswerVisibility()"
+    >
+      {{ isAnswerVisible ? "Hide Answer" : "Show Answer" }}
+    </button>
+  </div>
+
+  <div
+    [@expandCollapse]="isAnswerVisible ? 'expanded' : 'collapsed'"
+    class="overflow-hidden border rounded p-3 mt-2 prose"
+  >
+    <markdown lineNumbers clipboard mermaid [data]="question.answer"></markdown>
+  </div>
+</div>

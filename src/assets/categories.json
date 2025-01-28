@@ -1,0 +1,33 @@
+[
+  { "label": "Java", "icon": "assets/icons/java.jpg", "url": "/tutorials/java/introduction" },
+  {
+    "label": "Spring Boot",
+    "icon": "assets/icons/spring-boot.jpg",
+    "url": "/tutorials/spring-boot/introduction"
+  },
+  { "label": "Python", "icon": "assets/icons/python.jpg", "url": "/tutorials/python/introduction" },
+  { "label": "Angular", "icon": "assets/icons/angular.jpg", "url": "/tutorials/angular/introduction" },
+  { "label": "React", "icon": "assets/icons/react.jpg", "url": "/tutorials/react/introduction" },
+  { "label": "Vue", "icon": "assets/icons/vue.jpg", "url": "/tutorials/vue/introduction" },
+  { "label": "SCSS", "icon": "assets/icons/scss.jpg", "url": "/tutorials/scss/introduction" },
+  { "label": "CSS", "icon": "assets/icons/css.jpg", "url": "/tutorials/css/introduction" },
+  { "label": "Node.js", "icon": "assets/icons/nodejs.jpg", "url": "/tutorials/nodejs/introduction" },
+  {
+    "label": "SQL Server",
+    "icon": "assets/icons/sql.jpg",
+    "url": "/tutorials/sqlserver/introduction"
+  },
+  { "label": "MongoDB", "icon": "assets/icons/mongo.jpg", "url": "/tutorials/mongodb/introduction" },
+  { "label": "Express", "icon": "assets/icons/express.jpg", "url": "/tutorials/express/introduction" },
+  { "label": "Docker", "icon": "assets/icons/docker.jpg", "url": "/tutorials/docker/introduction" },
+  {
+    "label": "Kubernetes",
+    "icon": "assets/icons/kubernetes.jpg",
+    "url": "/tutorials/kubernetes/introduction"
+  },
+  {
+    "label": "TypeScript",
+    "icon": "assets/icons/typescript.jpg",
+    "url": "/tutorials/typescript/introduction"
+  }
+]

@@ -1,0 +1,4 @@
+<div *ngIf="quiz">
+  <p>{{ quiz.title }}</p>
+  <app-question [questions]="quiz.questions"></app-question>
+</div>

@@ -1,0 +1,23 @@
+<ng-container *ngIf="questions">
+  <div *ngFor="let question of questions">
+    <!-- Use ngSwitch to handle question types -->
+    <ng-container [ngSwitch]="question.type">
+      <!-- Single Choice Question -->
+      <ng-container *ngSwitchCase="'SCQ'">
+        <app-scq [question]="question"></app-scq>
+      </ng-container>
+
+      <!-- Multiple Choice Question -->
+      <ng-container *ngSwitchCase="'MCQ'">
+        <app-mcq [question]="question"></app-mcq>
+      </ng-container>
+
+      <!-- Fallback for unknown question types -->
+      <ng-container *ngSwitchDefault>
+        <p class="text-red-500">Unknown question type: {{ question.type }}</p>
+      </ng-container>
+    </ng-container>
+
+    <hr />
+  </div>
+</ng-container>

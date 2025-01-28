@@ -1,0 +1,23 @@
+<div class="grid grid-cols-12" *ngIf="tutorial$ | async as tutorial">
+  <div
+    class="md:col-span-3 col-span-12 max-h-[calc(100vh-6rem)] overflow-y-auto bg-gray-50 border-r border-gray-200 md:block hidden"
+  >
+    <app-tree-view [topics]="tutorial.outline"></app-tree-view>
+  </div>
+  <div
+    class="md:col-span-9 col-span-12 max-h-[calc(100vh-6rem)] overflow-y-auto bg-gray-50"
+  >
+    <div class="pl-4 md:pt-20 pt-2 bg-white md:w-fit w-full pr-5">
+      <div class="prose">
+        <markdown
+          clipboard
+          mermaid
+          [src]="tutorial.content"
+          (load)="onLoad()"
+        ></markdown>
+      </div>
+      <app-quiz [quiz]="tutorial.quiz"></app-quiz>
+    </div>
+    <app-footer></app-footer>
+  </div>
+</div>

@@ -1,0 +1,113 @@
+[
+  {
+    "id": "1",
+    "label": "Java Collections",
+    "url": "java-collections",
+    "children": [
+      {
+        "id": "1-0",
+        "label": "Introduction to collections",
+        "url": "introduction-to-java-collections"
+      },
+      {
+        "id": "1-1",
+        "label": "Iterable",
+        "url": "iterable"
+      },
+      {
+        "id": "1-1",
+        "label": "Collection interface",
+        "url": "collection-interface"
+      },
+      {
+        "id": "1-2",
+        "label": "Features of Java",
+        "url": "features-of-java"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "label": "Introduction to Java",
+    "url": "introduction-to-java",
+    "children": [
+      {
+        "id": "1-1",
+        "label": "History of Java",
+        "url": "java-exceptions"
+      },
+      {
+        "id": "1-2",
+        "label": "Features of Java",
+        "url": "features-of-java"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "label": "Exception Handling",
+    "url": "exception-handling",
+    "children": [
+      {
+        "id": "1-1",
+        "label": "Java Exceptions",
+        "url": "java-exceptionsS"
+      },
+      {
+        "id": "1-2",
+        "label": "Java Try-catch block",
+        "url": "java-try-catch-block"
+      },
+      {
+        "id": "1-3",
+        "label": "Java Multiple Catch Block",
+        "url": "java-multiple-catch-block"
+      },
+      {
+        "id": "1-4",
+        "label": "Java Nested try",
+        "url": "java-nested-try"
+      },
+      {
+        "id": "1-5",
+        "label": "Java Finally Block",
+        "url": "java-finally-block"
+      },
+      {
+        "id": "1-6",
+        "label": "Java Throw Keyword",
+        "url": "java-throw-keyword"
+      },
+      {
+        "id": "1-7",
+        "label": "Java Exception Propagation",
+        "url": "java-exception-propagation"
+      },
+      {
+        "id": "1-8",
+        "label": "Java Throws Keyword",
+        "url": "java-throws-keyword"
+      },
+      {
+        "id": "1-9",
+        "label": "Java Throw vs Throws",
+        "url": "java-throw-vs-throws"
+      },
+      {
+        "id": "1-10",
+        "label": "Final vs Finally vs Finalize",
+        "url": "final-vs-finally-vs-finalize"
+      },
+      {
+        "id": "1-11",
+        "label": "Exception Handling with Method Overriding",
+        "url": "exception-handling-with-method-overriding"
+      },
+      {
+        "id": "1-12",
+        "label": "Java Custom Exceptions",
+        "url": "java-custom-exceptions"
+      }
+    ]
+  }
+]

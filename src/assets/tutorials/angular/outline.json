@@ -1,0 +1,66 @@
+[
+  {
+    "id": "1",
+    "label": "Introduction",
+    "children": [
+      {
+        "id": "1.1",
+        "label": "Introduction to Angular",
+        "url": "/tutorials/angular/introduction"
+      },
+      {
+        "id": "1.2",
+        "label": "Life cycle hooks",
+        "url": "/tutorials/angular/lifecycle-hooks"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "label": "Components and Templates",
+    "children": [
+      {
+        "id": "2.1",
+        "label": "Creating Components",
+        "url": "/tutorials/angular/creating-components"
+      },
+      {
+        "id": "2.2",
+        "label": "Templates and Data Binding",
+        "url": "/tutorials/angular/templates-and-data-binding"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "label": "Services and Dependency Injection",
+    "children": [
+      {
+        "id": "3.1",
+        "label": "Creating Services",
+        "url": "/tutorials/angular/creating-services"
+      },
+      {
+        "id": "3.2",
+        "label": "Dependency Injection",
+        "url": "/tutorials/angular/dependency-injection"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "label": "Routing and Navigation",
+    "children": [
+      {
+        "id": "4.1",
+        "label": "Setting Up Routes",
+        "url": "/tutorials/angular/setting-up-routes"
+      },
+      {
+        "id": "4.2",
+        "label": "Navigation",
+        "url": "/tutorials/angular/navigation"
+      }
+    ]
+  }
+]
