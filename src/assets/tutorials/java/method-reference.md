@@ -2,16 +2,16 @@
 
 Method references in Java provide a way to refer to methods without invoking them. They are a shorthand notation of a lambda expression to call a method. Method references can be used to refer to a method in four different ways:
 ```mermaid
-mindmap
-  root((Method References in Java))
-    Static Method
-      ClassName::methodName
-    Instance Method of a Particular Object
-      instance::methodName
-    Instance Method of an Arbitrary Object of a Particular Type
-      ClassName::methodName
-    Constructor
-      ClassName::new
+graph TD
+  A[Method References in Java]
+  A --> B[Static Method]
+  B --> B1[ClassName::methodName]
+  A --> C[Instance Method of a Particular Object]
+  C --> C1[instance::methodName]
+  A --> D[Instance Method of an Arbitrary Object of a Particular Type]
+  D --> D1[ClassName::methodName]
+  A --> E[Constructor]
+  E --> E1[ClassName::new]
 ```
 
 ## 1. Reference to a Static Method
