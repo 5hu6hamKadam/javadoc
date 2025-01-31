@@ -45,5 +45,36 @@
         "url": "/tutorials/java/java-io-streams"
       }
     ]
+  },
+  {
+    "id": "2",
+    "label": "Java Collections",
+    "children": [
+      {
+        "id": "2.1",
+        "label": "Introduction to Collections",
+        "url": "/tutorials/java/introduction-to-collections"
+      },
+      {
+        "id": "2.2",
+        "label": "List Interface",
+        "url": "/tutorials/java/list-interface"
+      },
+      {
+        "id": "2.3",
+        "label": "Set Interface",
+        "url": "/tutorials/java/set-interface"
+      },
+      {
+        "id": "2.4",
+        "label": "Map Interface",
+        "url": "/tutorials/java/map-interface"
+      },
+      {
+        "id": "2.5",
+        "label": "Queue Interface",
+        "url": "/tutorials/java/queue-interface"
+      }
+    ]
   }
 ]

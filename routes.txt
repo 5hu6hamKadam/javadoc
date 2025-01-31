@@ -2,7 +2,7 @@
 /tutorials/angular/introduction
 /tutorials/angular/lifecycle-hooks
 /tutorials/java/collection-interface
-/tutorials/java/introduction-to-java-collections
+/tutorials/java/introduction-to-collections
 /tutorials/java/introduction
 /tutorials/java/iterable
 /tutorials/java/java-exceptions
